@@ -1,0 +1,51 @@
+html {
+  font-size: 10px; // static
+  line-height: 1.5;
+}
+
+body{
+  color: $colorTextLightGray;
+  font: normal $primeFont;
+
+}
+
+
+// ------- Links ----------
+
+a,
+.link {
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+
+    text-decoration: underline;
+  }
+}
+
+
+// ------ Images --------
+
+img {
+  vertical-align: middle;
+}
+
+
+// ------ Body text --------
+
+p{
+  color: $colorTextDarkDray;
+}
+
+
+// ----- Headings ------
+
+.h1,
+.h2,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+  margin: 0;
+}

@@ -1,0 +1,132 @@
+//-------Floated Elements-------
+
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.cf {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// -------Aligning Elements-------
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+.center{
+  margin: 0 auto;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+
+// ------- Display Values --------
+
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+// -------Background colors ------
+
+.bg-white{
+  &.bg-white{
+    background-color: $white;
+  }
+}
+
+.bg-gray{
+  &.bg-gray{
+    background-color: $graySteel;
+  }
+}
+
+.bg-durck-gray{
+  &.bg-durck-gray{
+    background-color: $grayVoronSteel;
+  }
+}
+
+
+
+// ---- Text colors ---
+.text-white{
+  &.text-white{
+    color: $colorTextWhite  ;
+  }
+}
+
+.text-dark-gray{
+  &.text-dark-gray{
+    color: $colorTextDarkDray;
+  }
+}
+
+.text-light-gray{
+  &.text-light-gray{
+    color: $colorTextLightGray;
+  }
+}
+
+.text-cyan{
+  &.text-cyan{
+    color: $primeSecond;
+  }
+}
+
+.text-orange{
+  &.text-orange{
+    color: $primeFirst;
+  }
+}
+
+
+//---- Activity -------
+
+.active{
+  &.active{
+    background: $primeThird;
+  }
+}
+
+.visible{
+  &.visible{
+    visibility: visible;
+  }
+}

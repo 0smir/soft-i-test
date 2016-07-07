@@ -1,0 +1,48 @@
+// ------ Gray----
+$white: #ffffff;
+$gray: #f3f3f3;
+$grayShade: #dbdbdb;// gradient
+$grayNeutral: #c5c5c5;//button border
+$grayCloud: #686868;
+$greyCloudLight: #989898;
+$graySilver: #e2e2e2;
+$graySteel: #f6f6f6;
+$grayVoronSteel: #dcdcdc;
+$iron: #dfdfdf;
+$corduroy: #aaaaaa;
+$blackHaze: #3f3f3f;
+$cloudNight: #252525;
+$whitesmoke:#f5f5f5; //bg of button
+$ghostwhite :#fdfdfd; //gradient base button
+$gallery: #e0e0e0; // gradient base button
+
+//-----Orange----
+$darkOrange: #e5690d; //text and price color
+$brightOrange: #ff7e00; //for nav
+
+// ---Blue----
+$teal: #0f7e9d;
+
+// -----Content Colors----
+$colorTextLightGray: $grayCloud; //button text
+$colorTextDarkDray: $blackHaze;
+$colorTextDark: $cloudNight;
+$colorTextWhite: $white;
+$colorTextOrange: $darkOrange; //text and price color
+
+//---Primary colors----
+$primeFirst: $darkOrange; // text color
+$primeSecond: $teal; // blue
+$primeThird: $brightOrange;
+
+
+//--- border ----
+$grayBorder: 1px solid $grayNeutral;
+$grayGradient: linear-gradient(to bottom, $ghostwhite 10%, $gray 44%, $gallery 61%, $grayShade 50%);
+
+// ---- Background color(image)-----
+$buttonBackground: $grayGradient;
+
+//---font--
+$primeFont: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$secondaryfont: "Trebuchet MS", Arial, "Helvetica Neue", Helvetica, sans-serif;

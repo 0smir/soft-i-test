@@ -1,0 +1,20 @@
+.btn{
+  //display: block;
+  height: 2rem;
+  margin: 1.5rem;
+  border: $grayBorder;
+  background-image: $buttonBackground; //todo may de need shadow
+  @include border-radius(2px);
+}
+
+.to-cart{
+  width: 8rem;
+}
+
+.search{
+  width: 6rem;
+}
+
+.purchase{
+  width: 12rem;
+}

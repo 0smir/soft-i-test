@@ -1,3 +1,9 @@
+
+*{
+  box-sizing: border-box;
+}
+
+
 html {
   font-size: 10px; // static
   line-height: 1.5;
@@ -5,14 +11,17 @@ html {
 
 body{
   color: $colorTextLightGray;
-  font: normal $primeFont;
-
+  font: lighter 1.2rem $primeFont;
 }
 
 
-// ------- Links ----------
 
-a,
+
+// ------- Links ----------
+a{
+  text-decoration: none;
+}
+
 .link {
   text-decoration: underline;
 
@@ -22,6 +31,7 @@ a,
     text-decoration: underline;
   }
 }
+
 
 
 // ------ Images --------
@@ -48,4 +58,16 @@ p{
 .h5,
 .h6{
   margin: 0;
+}
+
+.h1{
+  color: $primeLogoOrange;
+  font: normal 3.6rem $primeLogoFont;
+  //text-shadow: ;
+}
+
+.h2{
+  font: normal 1.8rem $primeFont;
+  color: $colorTextLightGray;
+  vertical-align: middle;
 }

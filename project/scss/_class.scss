@@ -63,6 +63,7 @@
   display: inline-block;
 }
 
+
 // -------Background colors ------
 
 .bg-white{
@@ -116,11 +117,22 @@
   }
 }
 
+// -------------------
+
+.input{
+  height: 2rem;
+  border: $grayBorder;
+  @include border-radius(2px);
+  padding-left: 1.6rem;
+  color: $colorTextLightGray;;
+}
+
 
 //---- Activity -------
 
 .active{
   &.active{
+    color: $colorTextWhite;
     background: $primeThird;
   }
 }

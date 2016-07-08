@@ -1,7 +1,6 @@
 .btn{
-  //display: block;
   height: 2rem;
-  margin: 1.5rem;
+  color: $colorTextLightGray;
   border: $grayBorder;
   background-image: $buttonBackground; //todo may de need shadow
   @include border-radius(2px);

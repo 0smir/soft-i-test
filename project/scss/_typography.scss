@@ -1,8 +1,6 @@
-
 *{
   box-sizing: border-box;
 }
-
 
 html {
   font-size: 10px; // static
@@ -12,12 +10,12 @@ html {
 body{
   color: $colorTextLightGray;
   font: lighter 1.2rem $primeFont;
+
 }
 
 
-
-
 // ------- Links ----------
+
 a{
   text-decoration: none;
 }
@@ -31,7 +29,6 @@ a{
     text-decoration: underline;
   }
 }
-
 
 
 // ------ Images --------

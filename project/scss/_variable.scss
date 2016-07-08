@@ -18,10 +18,12 @@ $gallery: #e0e0e0; // gradient base button
 
 //-----Orange----
 $darkOrange: #e5690d; //text and price color
+$lightOrange: #fc8e00;//logo color
 $brightOrange: #ff7e00; //for nav
 
 // ---Blue----
 $teal: #0f7e9d;
+$caribianBlue: #11add8; //logo color
 
 // -----Content Colors----
 $colorTextLightGray: $grayCloud; //button text
@@ -34,7 +36,8 @@ $colorTextOrange: $darkOrange; //text and price color
 $primeFirst: $darkOrange; // text color
 $primeSecond: $teal; // blue
 $primeThird: $brightOrange;
-
+$primeLogoOrange: $lightOrange;
+$primeLogoBlue: $caribianBlue;
 
 //--- border ----
 $grayBorder: 1px solid $grayNeutral;
@@ -46,3 +49,6 @@ $buttonBackground: $grayGradient;
 //---font--
 $primeFont: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $secondaryfont: "Trebuchet MS", Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+//----logo font---
+$primeLogoFont: "DIGI", Arial, "Helvetica Neue", Helvetica, sans-serif;

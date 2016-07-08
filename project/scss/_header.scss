@@ -1,0 +1,183 @@
+.header-top,
+.header-center,
+.header-bottom{
+  border: 1px solid blue;
+  min-height: 1rem;
+}
+
+header{
+  border-bottom: 10px solid $primeThird;
+}
+
+.header-top{
+  line-height: 30px;
+  height: 3rem;
+  vertical-align: middle;
+  ul{
+    width: 15%;
+  }
+  div{
+    width: 50%;
+  }
+  form{
+    width: 35%;
+  }
+}
+
+.total-nav{
+  font-size: 0;
+
+  li{
+    line-height: 30px;
+    vertical-align: middle;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  li:nth-of-type(-n+2){
+    margin-right: 1rem;
+  }
+
+  li > a{
+    height: 100%;
+    width: 100%;
+    //border: 1px solid green;
+  }
+
+
+  li:nth-of-type(1) a{
+    background: url('../images/navigation-icons.png')  no-repeat 34% 12%;
+  }
+
+  li:nth-of-type(2) a{
+    background: url('../images/navigation-icons.png')  no-repeat 64% 12%;
+  }
+
+  li:nth-of-type(3) a{
+    background: url('../images/navigation-icons.png')  no-repeat 94% 12%;
+  }
+
+}
+
+form{
+  font-size: 0;
+  text-align: right;
+
+  input{
+    width: 19.5rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    background: local url('../images/navigation-icons.png') no-repeat -129px -44px;
+  }
+
+  input::-webkit-input-placeholder{
+    color: $greyCloudLight;
+    font: lighter italic 1.2rem $primeFont;
+    opacity: 0.6;
+  }
+  button{
+    vertical-align: middle;
+  }
+}
+
+.header-center{
+  padding: 0.6rem 0 1rem;
+
+  div.logo{
+    width: 22rem;
+    padding: 0 1.2rem;
+
+  }
+
+  .graphic-logo{
+    margin-right: 6px;
+  }
+  h1{
+    margin-left: -6px;
+  }
+
+  h1 a{
+    color: $primeLogoOrange;
+  }
+
+  h1 span:last-of-type{
+    color: $primeLogoBlue;
+    margin-left: -10px;
+  }
+
+  .slogan,
+  .enter{
+    padding-top: 1.3rem;
+  }
+
+  .enter{
+    a:first-of-type{
+      margin-right: 1.5rem;
+      position: relative;
+    }
+    a:first-of-type::after{
+      content: '';
+      display: block;
+      height: 10px;
+      width: 1px;
+      border-right: 1px solid $darkOrange;
+      position: absolute;
+      top: 1px;
+      right: -7px;
+
+    }
+  }
+}
+
+
+.header-bottom nav {
+
+  ul {
+    font-size: 0;
+    padding-top: 1rem;
+  }
+
+  li {
+    height: 2.5rem;
+    font: normal 1.2rem $primeFont;
+  }
+
+  li:nth-of-type(-n+5) {
+    margin-right: 0.4rem;
+  }
+
+  a {
+    height: 100%;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    color: $colorTextLightGray;
+    background-color: $graySilver;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  a:hover {
+    color: $colorTextLightGray;
+  }
+
+}
+
+.order-info {
+  line-height: 33px;
+  vertical-align: middle;
+
+  li:first-of-type{
+    margin-right: 0.5rem;
+  }
+  li:nth-of-type(n+2) {
+    margin-right: 1rem;
+  }
+
+  a{
+    height: 3rem;
+    width: 3rem;
+    display: block;
+    background: url("../images/navigation-icons.png") no-repeat -48px -38px;
+  }
+
+}

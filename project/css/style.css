@@ -63,11 +63,25 @@
 .text-orange.text-orange {
   color: #e5690d; }
 
+.input {
+  height: 2rem;
+  border: 1px solid #c5c5c5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  padding-left: 1.6rem;
+  color: #686868; }
+
 .active.active {
+  color: #ffffff;
   background: #ff7e00; }
 
 .visible.visible {
   visibility: visible; }
+
+* {
+  box-sizing: border-box; }
 
 html {
   font-size: 10px;
@@ -75,14 +89,14 @@ html {
 
 body {
   color: #686868;
-  font: normal Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font: lighter 1.2rem Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-a,
+a {
+  text-decoration: none; }
+
 .link {
   text-decoration: underline; }
-  a:hover, a:focus,
-  .link:hover,
-  .link:focus {
+  .link:hover, .link:focus {
     text-decoration: underline; }
 
 img {
@@ -100,13 +114,25 @@ p {
 .h6 {
   margin: 0; }
 
+.h1 {
+  color: #fc8e00;
+  font: normal 3.6rem "DIGI", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.h2 {
+  font: normal 1.8rem Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #686868;
+  vertical-align: middle; }
+
 .container {
-  max-width: 100rem;
-  padding: 0 1rem; }
+  min-height: 2rem;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border: 1px solid red; }
 
 .btn {
   height: 2rem;
-  margin: 1.5rem;
+  color: #686868;
   border: 1px solid #c5c5c5;
   background-image: linear-gradient(to bottom, #fdfdfd 10%, #f3f3f3 44%, #e0e0e0 61%, #dbdbdb 50%);
   -webkit-border-radius: 2px;

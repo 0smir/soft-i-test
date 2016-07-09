@@ -128,13 +128,6 @@
 
 //---- Activity -------
 
-.active{
-  &.active{
-    color: $colorTextWhite;
-    background: $primeThird;
-  }
-}
-
 .visible{
   &.visible{
     visibility: visible;

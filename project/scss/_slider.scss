@@ -1,0 +1,36 @@
+.slideshow{
+  min-height: 24.5rem;
+  background-image: $sliderBackground;
+  border-bottom: $borderBottomWhite;
+}
+
+.slider{
+    padding: 0 2px;
+
+  .slider-item{
+    box-sizing: border-box;
+    max-width: 18.8rem;
+    padding: 3px;
+    margin-right: 0.4rem;
+  }
+  figure{
+    box-sizing: border-box;
+    max-width: 18rem;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  figure > img{
+    transition: transform .35s ease;
+  }
+
+  .slider-item:first-of-type{
+    margin-left: 0;
+  }
+
+  figure:hover img{
+    transform: scale(1.3);
+  }
+
+}
+

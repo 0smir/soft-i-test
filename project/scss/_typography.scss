@@ -10,6 +10,7 @@ html {
 body{
   color: $colorTextLightGray;
   font: lighter 1.2rem $primeFont;
+  line-height: 1.5;
 
 }
 
@@ -67,4 +68,15 @@ p{
   font: normal 1.8rem $primeFont;
   color: $colorTextLightGray;
   vertical-align: middle;
+}
+
+.h4{
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.h4 >a:hover{
+  text-decoration: underline;
 }

@@ -24,6 +24,7 @@ $brightOrange: #ff7e00; //for nav
 // ---Blue----
 $teal: #0f7e9d;
 $caribianBlue: #11add8; //logo color
+$lightTial:rgba(24, 140, 172, 1); //gradient blue
 
 // -----Content Colors----
 $colorTextLightGray: $grayCloud; //button text
@@ -41,11 +42,20 @@ $primeLogoBlue: $caribianBlue;
 
 //--- border ----
 $grayBorder: 1px solid $grayNeutral;
+$borderBottomWhite: 1px solid $white;
+
+//-----Gradient-----
 $grayGradient: linear-gradient(to bottom, $ghostwhite 10%, $gray 44%, $gallery 61%, $grayShade 50%);
+$blueGradient: linear-gradient(to bottom, rgba(24, 140, 172, 1) 23%,
+                                          rgba(24, 140, 172, 0.8) 59%,
+                                          rgba(24, 140, 172, 0.6) 85%,
+                                          rgba(24, 140, 172, 0.5) 98%);
+
+
 
 // ---- Background color(image)-----
 $buttonBackground: $grayGradient;
-
+$sliderBackground: $blueGradient;
 //---font--
 $primeFont: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $secondaryfont: "Trebuchet MS", Arial, "Helvetica Neue", Helvetica, sans-serif;

@@ -77,8 +77,8 @@
   }
 }
 
-.bg-durck-gray{
-  &.bg-durck-gray{
+.bg-dark-gray{
+  &.bg-dark-gray{
     background-color: $grayVoronSteel;
   }
 }
@@ -113,6 +113,13 @@
 .text-orange{
   &.text-orange{
     color: $primeFirst;
+  }
+}
+
+//---border---
+.border-gray{
+  &.border-gray{
+    border: $grayBorder;
   }
 }
 

@@ -2,18 +2,23 @@
   height: 2rem;
   color: $colorTextLightGray;
   border: $grayBorder;
-  background-image: $buttonBackground; //todo may de need shadow
+  //background-image: $buttonBackground; //todo may de need shadow
   @include border-radius(2px);
 }
 
 .to-cart{
   width: 8rem;
+  text-align: right;
+  background: url("../images/nav-icons-vertical.png") no-repeat -24px -20px, $buttonBackground;
+  padding: 2px 5px 3px 8px;
 }
 
 .search{
   width: 6rem;
+  background-image: $buttonBackground;
 }
 
 .purchase{
   width: 12rem;
+  background-image: $buttonBackground;
 }

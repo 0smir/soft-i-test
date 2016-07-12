@@ -140,3 +140,46 @@
     visibility: visible;
   }
 }
+
+//------ -------
+.best-price{
+  background-color: $teal;
+  padding: 0 0.5rem;
+  color: $white;
+  display: block;
+  @include border-radius(2px);
+  position: relative;
+  z-index: 1;
+
+  &::before{
+    content: ' ';
+    border: 5px solid transparent;
+    border-top: 5px solid $teal;
+    border-right: 5px solid $teal;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+  }
+}
+
+.best-seller{
+  background-color: $brightOrange;
+  padding: 0 0.5rem;
+  color: $white;
+  display: block;
+  @include border-radius(2px);
+  position: relative;
+  z-index: 1;
+
+  &::after{
+    content: ' ';
+    border: 5px solid transparent;
+    border-top: 5px solid $brightOrange;
+    border-right: 5px solid $brightOrange;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+  }
+}

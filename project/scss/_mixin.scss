@@ -5,6 +5,21 @@
   border-radius: $radius;
 }
 
+@mixin transform($transformation){
+  -webkit-transform: $transformation;
+  -o-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  transform: $transformation
+}
+
+@mixin transition($transitionFunction){
+  -webkit-transition: $transitionFunction;
+  -moz-transition: $transitionFunction;
+  -o-transition: $transitionFunction;
+  transition: $transitionFunction;
+}
+
 //---Media queries--
 
 @mixin breakpoint($point) {

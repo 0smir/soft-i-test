@@ -54,7 +54,7 @@ header{
   }
 
   li:nth-of-type(3) a{
-    background: url('../images/nav-icons-vertical.png')  no-repeat -21px -194px;
+    background: url('../images/nav-icons-vertical.png')  no-repeat -21px -187px;
   }
 
 }
@@ -67,7 +67,7 @@ form{
     width: 19.5rem;
     vertical-align: middle;
     margin-right: 0.5rem;
-    background: local url('../images/nav-icons-vertical.png') no-repeat -23px -325px;
+    background: local url('../images/nav-icons-vertical.png') no-repeat -23px -302px;
   }
 
   input::-webkit-input-placeholder{
@@ -204,7 +204,7 @@ form{
     width: 3rem;
     display: block;
     position: relative;
-    background: url("../images/nav-icons-vertical.png") no-repeat -20px -255px;
+    background: url("../images/nav-icons-vertical.png") no-repeat -17px -236px;
   }
 
   a:hover::after{
@@ -215,6 +215,7 @@ form{
     line-height: 2rem;
     vertical-align: middle;
     padding: 0 0.5rem;
+   @include border-radius(2px);
     border: $grayBorder;
     background-color: $brightOrange;
     color: $white;

@@ -94,7 +94,7 @@
 
 .text-dark-gray{
   &.text-dark-gray{
-    color: $colorTextDarkDray;
+    color: $colorTextDarkGray;
   }
 }
 
@@ -181,5 +181,12 @@
     top: 16px;
     left: 16px;
 
+  }
+}
+
+
+.active{
+  &.active{
+    background: $brightOrange;
   }
 }

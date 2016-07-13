@@ -1,0 +1,57 @@
+.footer-hearer{
+  border-bottom: $borderBottomWhite;
+  box-shadow: inset 0px -1px 6px 1px $darkCaribbean;
+  ul{
+    line-height: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  li{
+    position: relative;
+  }
+
+  li>a{
+    padding: 0 2rem;
+    @include transition(transform .15s ease-out);
+  }
+  li:first-of-type >a{
+    padding-left: 0;
+  }
+
+  li>a:hover{
+    @include transform(scale(1.3));
+  }
+
+  li:nth-of-type(-n+5)::after{
+    content: '|';
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.footer-bottom{
+  font-size: 1.1rem;
+  padding: 0.8rem 0 2.4rem;
+  p{
+    font-size: 1.1rem;
+  }
+
+  a{
+    position: relative;
+  }
+
+  a::before{
+    content: ' ';
+    height: 3.3rem;
+    width: 3.3rem;
+    display: block;
+    background: url("../images/soft-i-logo.png") no-repeat;
+    position: absolute;
+    top: -13px;
+    left: -37px;
+
+  }
+}

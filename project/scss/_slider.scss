@@ -2,16 +2,21 @@
   min-height: 24.5rem;
   background-image: $sliderBackground;
   border-bottom: $borderBottomWhite;
+
+  .h3{
+    padding-left: 0;
+  }
+
 }
 
 .slider{
-    padding: 0 2px;
+  padding: 0 4px;
 
   .slider-item{
     box-sizing: border-box;
     max-width: 18.8rem;
     padding: 3px;
-    margin-right: 0.4rem;
+    margin-right: 0.7rem;
   }
   
   .slider-item:last-of-type{

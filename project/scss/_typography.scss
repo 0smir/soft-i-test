@@ -81,6 +81,12 @@ section > p{
   padding: 0 0.4rem 2rem 0.8rem;
 }
 
+.h5 + p{
+  border-bottom: $dashedBorder;
+  padding-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
 
 // ----- Headings ------
 
@@ -122,9 +128,15 @@ section > p{
   text-decoration: underline;
 }
 
+.h5{
+  font-size: 1.2rem;
+}
+
 .small{
   font: normal 1.1rem $secondaryfont;
   line-height: 30px;
   vertical-align: middle;
   padding-left: 2rem;
 }
+
+

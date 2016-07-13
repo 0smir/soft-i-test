@@ -83,6 +83,12 @@
   }
 }
 
+.bg-cyan{
+  &.bg-cyan{
+  background-color: $middleTeal;
+  }
+}
+
 
 
 // ---- Text colors ---

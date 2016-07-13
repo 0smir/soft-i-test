@@ -47,7 +47,6 @@ figure{
 }
 
 figure > img{
-  //transition: transform .35s ease;
   @include transition(transform .35s ease);
 }
 
@@ -72,7 +71,14 @@ figure:hover figcaption{
 // ------ Body text --------
 
 p{
-  color: $colorTextDarkDray;
+  color: $colorTextDarkGray;
+  font-size: 1.3rem;
+  line-height: 1.4;
+
+}
+
+section > p{
+  padding: 0 0.4rem 2rem 0.8rem;
 }
 
 
@@ -99,6 +105,11 @@ p{
   color: $colorTextLightGray;
   vertical-align: middle;
 }
+.h3{
+  padding-left: 1rem;
+  line-height: 30px;
+  vertical-align: middle;
+}
 
 .h4{
   margin-bottom: 5px;
@@ -109,4 +120,11 @@ p{
 
 .h4 >a:hover{
   text-decoration: underline;
+}
+
+.small{
+  font: normal 1.1rem $secondaryfont;
+  line-height: 30px;
+  vertical-align: middle;
+  padding-left: 2rem;
 }

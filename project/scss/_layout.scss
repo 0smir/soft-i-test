@@ -1,7 +1,24 @@
 .container{
   min-height: 2rem;
-  max-width: 98rem;
+  max-width: 100rem;
   margin: 0 auto;
   padding: 0 1rem;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
+
+.main{
+  max-width: 77.6rem;
+  min-height: 10rem;
+  border: 1px solid deeppink;
+}
+
+.container > .h4:first-of-type{
+  background: url('../images/nav-icons-vertical.png') no-repeat -25px -408px;
+}
+
+.aside{
+  width: 18.8rem;
+  min-height: 7rem;
+  border: $grayBorder;
+}
+

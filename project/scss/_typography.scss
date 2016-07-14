@@ -103,7 +103,13 @@ section > p{
 .h1{
   color: $primeLogoOrange;
   font: normal 3.6rem $primeLogoFont;
-  //text-shadow: ;   todo
+
+ span:first-child{
+    text-shadow: 0px -1px 0px $shadowOrange;
+  }
+  span:last-child{
+    text-shadow: 0px -1px 0px $shadowTeal;
+  }
 }
 
 .h2{

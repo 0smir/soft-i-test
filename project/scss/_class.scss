@@ -190,10 +190,29 @@
   }
 }
 
+.marker{
+  position: relative;
+  &::after{
+    content: ' ';
+    border: 5px solid transparent;
+    border-left: 5px solid $brightOrange;
+    position: absolute;
+    top: 8px;
+    left: 7px;
+  }
+}
+
 
 .active{
   &.active{
     background: $brightOrange;
+    color: $white;
+  }
+}
+.selected{
+  &.selected{
+    background: $brightOrange;
+    color: $white;
   }
 }
 

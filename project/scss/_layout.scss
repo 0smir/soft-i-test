@@ -3,13 +3,16 @@
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 1rem;
-  //border: 1px solid red;
 }
 
 .main{
   max-width: 77.6rem;
   min-height: 10rem;
-  //border: 1px solid deeppink;
+  @include breakpoint(medium) {
+    max-width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
 }
 
 .container > .h4:first-of-type{

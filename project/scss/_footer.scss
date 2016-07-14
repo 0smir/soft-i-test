@@ -1,10 +1,12 @@
-.footer-hearer{
+.footer-header{
   border-bottom: $borderBottomWhite;
   box-shadow: inset 0px -1px 6px 1px $darkCaribbean;
   ul{
     line-height: 30px;
     height: 30px;
     vertical-align: middle;
+    @include breakpoint(small){display: none;}
+    @include breakpoint(extrasmall){display: none;}
   }
 
   li{
@@ -35,8 +37,21 @@
 .footer-bottom{
   font-size: 1.1rem;
   padding: 0.8rem 0 2.4rem;
+  @include breakpoint(small){ padding-bottom: 1.5rem; }
+  @include breakpoint(extrasmall){ padding-bottom: 1.5rem; }
+
   p{
     font-size: 1.1rem;
+    @include breakpoint(small){
+      text-align: center;
+      margin-bottom: 1rem;
+      float: none;
+    }
+    @include breakpoint(extrasmall){
+      text-align: center;
+      margin-bottom: 1rem;
+      float: none;
+    }
   }
 
   a{
@@ -52,6 +67,23 @@
     position: absolute;
     top: -13px;
     left: -37px;
+    @include breakpoint(small){left: 9px;}
+    @include breakpoint(extrasmall){left: 9px;}
 
+  }
+
+  .author{
+    @include breakpoint(small){
+      width: 50%;
+      margin: 0 auto;
+      float: none;
+      text-align: center;
+    }
+    @include breakpoint(extrasmall){
+      width: 50%;
+      margin: 0 auto;
+      float: none;
+      text-align: center;
+    }
   }
 }

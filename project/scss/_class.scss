@@ -226,3 +226,11 @@
   line-height: 1;
   @include border-radius(2px);
 }
+
+
+.product-card{
+  max-width: 18.8rem;
+  box-sizing: border-box;
+  padding: 3px;
+  margin: 0 auto;
+}

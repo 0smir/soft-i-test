@@ -21,3 +21,14 @@
   width: 12rem;
   background-image: $buttonBackground;
 }
+
+.burger{
+  border: $grayBorder;
+  @include border-radius(3px);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cart{
+  font-size: 3rem;
+}

@@ -1,5 +1,4 @@
 .slideshow{
-  min-height: 24.5rem;
   background-image: $sliderBackground;
   border-bottom: $borderBottomWhite;
 
@@ -10,17 +9,14 @@
 }
 
 .slider{
-  padding: 0 4px;
+  padding: 0 0 15px;
+
+  .product-card{
+    box-shadow: 0 2px 0 0 $blackSadow;
+  }
 
   .slider-item{
-    box-sizing: border-box;
-    max-width: 18.8rem;
-    padding: 3px;
-    margin-right: 0.7rem;
-  }
-  
-  .slider-item:last-of-type{
-    margin-right: 0;
+    width: 20%;
   }
 
 }

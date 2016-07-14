@@ -1,4 +1,5 @@
 .aside{
+  @include breakpoint(extrasmall){display: none;}
   margin-bottom: 1rem;
 
   .h3{
@@ -35,6 +36,11 @@
 
 .aside:first-of-type{
   margin-bottom: 1.4rem;
+  @include breakpoint(medium){display: none;}
+}
+
+.news{
+  @include breakpoint(medium){width: 100%;}
 }
 
 .news > a{
@@ -46,6 +52,8 @@
 }
 
 .social {
+  margin-bottom: 1rem;
+  @include breakpoint(extrasmall){display: none;}
   a{
     height: 2.5rem;
     width: 2.5rem;

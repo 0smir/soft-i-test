@@ -1,4 +1,3 @@
-
 section,
 aside {
   position: relative;
@@ -39,15 +38,13 @@ section::before{
     z-index: 1;
 }
 
-.catalog{
-
-  li{
-    width: 24.2%;
-    box-sizing: border-box;
-    max-width: 18.8rem;
-    padding: 3px;
-    margin-right: 0.5rem;
+.catalog {
+  & > div {
+    width: 25%;
     margin-bottom: 2rem;
+    //border: 1px solid red;
+    @include breakpoint(medium) {width: 25%;}
+    @include breakpoint(small) {width: 50%;}
+    @include breakpoint(extrasmall){width: 100%;}
   }
-
 }

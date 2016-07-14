@@ -1,12 +1,20 @@
 .header-top,
 .header-center,
 .header-bottom{
-  //border: 1px solid blue;
   min-height: 1rem;
 }
 
 header{
   border-bottom: 10px solid $primeThird;
+
+  .burger,
+  .cart{
+    @include breakpoint(extralarge){display: none;}
+    @include breakpoint(large){display: none;}
+    @include breakpoint(medium){display: block;}
+  //  @include breakpoint(small){display: block;}
+  //  @include breakpoint(extrasmall){display: block;}
+  }
 }
 
 .header-top{
@@ -17,12 +25,21 @@ header{
   vertical-align: middle;
   ul{
     width: 15%;
+    @include breakpoint(medium){display: none;}
   }
   div{
     width: 50%;
+    @include breakpoint(medium){width: 100%;}
+
+    p{
+      line-height: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
   }
-  form{
+  .main-search{
     width: 35%;
+    @include breakpoint(medium){display: none;}
   }
 }
 
@@ -142,12 +159,10 @@ form{
 }
 
 .header-bottom nav {
+
+  @include breakpoint(medium){display: none;}
   @include breakpoint(small){display: none;}
   @include breakpoint(extrasmall){display: none;}
-
-  .burger{
-    @include breakpoint(small){display: block;}
-  }
 
   ul {
     font-size: 0;
@@ -226,6 +241,8 @@ form{
 .order-info {
   line-height: 33px;
   vertical-align: middle;
+  @include breakpoint(medium){display: none;}
+  @include breakpoint(small){display: none;}
   @include breakpoint(extrasmall){display: none;}
 
   li:first-of-type{

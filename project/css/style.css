@@ -338,12 +338,6 @@ article {
   -ms-border-radius: 2px;
   border-radius: 2px; }
 
-.to-cart {
-  width: 8rem;
-  text-align: right;
-  background: url("../images/nav-icons-vertical.png") no-repeat -24px -20px, linear-gradient(to bottom, #fdfdfd 10%, #f3f3f3 44%, #e0e0e0 61%, #dbdbdb 50%);
-  padding: 2px 5px 3px 8px; }
-
 .search {
   width: 6rem;
   background-image: linear-gradient(to bottom, #fdfdfd 10%, #f3f3f3 44%, #e0e0e0 61%, #dbdbdb 50%); }
@@ -362,7 +356,77 @@ article {
   margin-bottom: 1rem; }
 
 .cart {
+  border: none;
+  background-color: transparent;
   font-size: 3rem; }
+
+@-webkit-keyframes flying {
+  from {
+    top: -25px;
+    left: 30px; }
+  to {
+    top: -175px;
+    left: 41px;
+    opacity: 0.1; } }
+@-o-keyframes flying {
+  from {
+    top: -25px;
+    left: 30px; }
+  to {
+    top: -175px;
+    left: 41px;
+    opacity: 0.1; } }
+@-moz-keyframes flying {
+  from {
+    top: -25px;
+    left: 30px; }
+  to {
+    top: -175px;
+    left: 41px;
+    opacity: 0.1; } }
+@keyframes flying {
+  from {
+    top: -25px;
+    left: 30px; }
+  to {
+    top: -175px;
+    left: 41px;
+    opacity: 0.1; } }
+.to-cart {
+  width: 8rem;
+  text-align: right;
+  background: url("../images/nav-icons-vertical.png") no-repeat -24px -20px, linear-gradient(to bottom, #fdfdfd 10%, #f3f3f3 44%, #e0e0e0 61%, #dbdbdb 50%);
+  padding: 2px 5px 3px 8px;
+  -webkit-transition: background 0.35s ease;
+  -moz-transition: background 0.35s ease;
+  -ms-transition: background 0.35s ease;
+  -o-transition: background 0.35s ease;
+  transition: background 0.35s ease; }
+  .to-cart:hover {
+    background: url("../images/nav-icons-vertical.png") no-repeat -44px -20px, linear-gradient(to bottom, #fdfdfd 10%, #f3f3f3 44%, #e0e0e0 61%, #dbdbdb 50%);
+    box-shadow: 0px 0px 1px 1px #e5690d; }
+
+.clicked {
+  position: relative; }
+  .clicked::before {
+    content: '+1';
+    display: block;
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: 4px 2px;
+    box-sizing: border-box;
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #fc8e00;
+    position: absolute;
+    top: -24px;
+    left: 30px;
+    -webkit-animation: flying 1.55s forwards ease-in;
+    -moz-animation: flying 1.55s forwards ease-in;
+    animation: flying 1.55s forwards ease-in; }
 
 .header-top,
 .header-center,
@@ -371,6 +435,18 @@ article {
 
 header {
   border-bottom: 10px solid #ff7e00; }
+  @media (min-width: 1025px) {
+    header .burger,
+    header .cart {
+      display: none; } }
+  @media (max-width: 1024px) {
+    header .burger,
+    header .cart {
+      display: none; } }
+  @media (max-width: 991px) {
+    header .burger,
+    header .cart {
+      display: block; } }
 
 .header-top {
   line-height: 30px;
@@ -384,10 +460,23 @@ header {
       display: none; } }
   .header-top ul {
     width: 15%; }
+    @media (max-width: 991px) {
+      .header-top ul {
+        display: none; } }
   .header-top div {
     width: 50%; }
-  .header-top form {
+    @media (max-width: 991px) {
+      .header-top div {
+        width: 100%; } }
+    .header-top div p {
+      line-height: 30px;
+      height: 30px;
+      vertical-align: middle; }
+  .header-top .main-search {
     width: 35%; }
+    @media (max-width: 991px) {
+      .header-top .main-search {
+        display: none; } }
 
 .total-nav {
   font-size: 0; }
@@ -464,15 +553,15 @@ form {
     top: 4px;
     right: -7px; }
 
+@media (max-width: 991px) {
+  .header-bottom nav {
+    display: none; } }
 @media (max-width: 767px) {
   .header-bottom nav {
     display: none; } }
 @media (max-width: 320px) {
   .header-bottom nav {
     display: none; } }
-@media (max-width: 767px) {
-  .header-bottom nav .burger {
-    display: block; } }
 .header-bottom nav ul {
   font-size: 0;
   padding-top: 1rem; }
@@ -528,6 +617,12 @@ form {
 .order-info {
   line-height: 33px;
   vertical-align: middle; }
+  @media (max-width: 991px) {
+    .order-info {
+      display: none; } }
+  @media (max-width: 767px) {
+    .order-info {
+      display: none; } }
   @media (max-width: 320px) {
     .order-info {
       display: none; } }

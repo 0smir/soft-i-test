@@ -42,8 +42,11 @@
 //---Media queries--
 
 @mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: 1200px) { @content; }
+  @if $point == extralarge {
+    @media (min-width: 1025px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1024px) { @content; }
   }
   @else if $point == medium {
     @media (max-width: 991px) { @content; }

@@ -1,0 +1,23 @@
+.slideshow{
+  background-image: $sliderBackground;
+  border-bottom: $borderBottomWhite;
+
+  .h3{
+    padding-left: 0;
+  }
+
+}
+
+.slider{
+  padding: 0 0 15px;
+
+  .product-card{
+    box-shadow: 0 2px 0 0 $blackSadow;
+  }
+
+  .slider-item{
+    width: 20%;
+  }
+
+}
+

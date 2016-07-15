@@ -15,17 +15,24 @@ $cloudNight: #252525;
 $whitesmoke:#f5f5f5; //bg of button
 $ghostwhite :#fdfdfd; //gradient base button
 $gallery: #e0e0e0; // gradient base button
+$blackSadow: rgba(0, 0, 0, 0.2);//product-cart shadow
 
 //-----Orange----
 $darkOrange: #e5690d; //text and price color
+$lightOrange: #fc8e00;//logo color
 $brightOrange: #ff7e00; //for nav
-
+$shadowOrange: #ad6100; //logo shadow
 // ---Blue----
 $teal: #0f7e9d;
+$caribbeanBlue: #11add8; //logo color
+$lightTial:rgba(24, 140, 172, 1); //gradient blue
+$middleTeal: #3c9bb5;
+$darkCaribbean: #2d7488;
+$shadowTeal: #0c7794;//logo shadow
 
 // -----Content Colors----
 $colorTextLightGray: $grayCloud; //button text
-$colorTextDarkDray: $blackHaze;
+$colorTextDarkGray: $blackHaze;
 $colorTextDark: $cloudNight;
 $colorTextWhite: $white;
 $colorTextOrange: $darkOrange; //text and price color
@@ -34,15 +41,29 @@ $colorTextOrange: $darkOrange; //text and price color
 $primeFirst: $darkOrange; // text color
 $primeSecond: $teal; // blue
 $primeThird: $brightOrange;
-
+$primeLogoOrange: $lightOrange;
+$primeLogoBlue: $caribbeanBlue;
 
 //--- border ----
 $grayBorder: 1px solid $grayNeutral;
+$borderBottomWhite: 1px solid $white;
+$dashedBorder: 1px dashed $grayNeutral;
+
+//-----Gradient-----
 $grayGradient: linear-gradient(to bottom, $ghostwhite 10%, $gray 44%, $gallery 61%, $grayShade 50%);
+$blueGradient: linear-gradient(to bottom, rgba(24, 140, 172, 1) 23%,
+                                          rgba(24, 140, 172, 0.8) 59%,
+                                          rgba(24, 140, 172, 0.6) 85%,
+                                          rgba(24, 140, 172, 0.5) 98%);
+$shadeBlackGradient: linear-gradient(to bottom, rgba(104, 104, 104, .3) 10%, transparent 20%);
+
 
 // ---- Background color(image)-----
 $buttonBackground: $grayGradient;
-
+$sliderBackground: $blueGradient;
 //---font--
 $primeFont: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $secondaryfont: "Trebuchet MS", Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+//----logo font---
+$primeLogoFont: "DIGI", Arial, "Helvetica Neue", Helvetica, sans-serif;

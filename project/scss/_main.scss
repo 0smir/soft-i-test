@@ -1,0 +1,50 @@
+section,
+aside {
+  position: relative;
+
+  .h3 {
+    border-bottom: 1px solid $white;
+    box-shadow: 0px 1px 0px 0px $grayNeutral;
+    margin-bottom: 1.8rem;
+    position: relative;
+  }
+
+  h3::before {
+    content: ' ';
+    border: 6px solid transparent;
+    border-top: 6px solid $grayNeutral;
+    position: absolute;
+    top: 31px;
+    left: 12px;
+  }
+
+  h3::after {
+    content: ' ';
+    border: 6px solid transparent;
+    border-top: 6px solid $white;
+    position: absolute;
+    top: 30px;
+    left: 12px;
+  }
+
+}
+section::before{
+    content: ' ';
+    border: 6px solid transparent;
+    border-top: 6px solid $graySteel;
+    position: absolute;
+    top: 29px;
+    left: 12px;
+    z-index: 1;
+}
+
+.catalog {
+  & > div {
+    width: 25%;
+    margin-bottom: 2rem;
+    //border: 1px solid red;
+    @include breakpoint(medium) {width: 25%;}
+    @include breakpoint(small) {width: 50%;}
+    @include breakpoint(extrasmall){width: 100%;}
+  }
+}

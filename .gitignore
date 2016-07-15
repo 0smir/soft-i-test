@@ -1,0 +1,6 @@
+project/.idea/workspace.xml
+project/.idea/watcherTasks.xml
+project/.idea/**/*.*
+project/**/.sass-cache/**/*.*
+*.xml
+*.iml

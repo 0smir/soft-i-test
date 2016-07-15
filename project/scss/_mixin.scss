@@ -5,11 +5,48 @@
   border-radius: $radius;
 }
 
+@mixin transform($transformation){
+  -webkit-transform: $transformation;
+  -o-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  transform: $transformation
+}
+
+
+@function vendor-args($arg, $vendor) {
+  $result: ();
+  @each $i in $arg {
+    @if $i == transform { $result: append($result, #{$vendor}$i); }
+    @else { $result: append($result, $i); }
+  }
+  @return $result;
+}
+
+// vendor mixin
+@mixin vendor($property, $args...){
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    $out: null;
+    @each $arg in nth($args,1) {
+      $out: ($out, vendor-args($arg, $vendor));
+    }
+    #{$vendor}#{$property}: $out;
+  }
+}
+
+// transition mixin
+@mixin transition($args...) {
+  @include vendor(transition, $args);
+}
+
 //---Media queries--
 
 @mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: 1200px) { @content; }
+  @if $point == extralarge {
+    @media (min-width: 1025px) { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1024px) { @content; }
   }
   @else if $point == medium {
     @media (max-width: 991px) { @content; }

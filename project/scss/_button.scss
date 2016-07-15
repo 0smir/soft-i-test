@@ -1,20 +1,85 @@
 .btn{
-  //display: block;
   height: 2rem;
-  margin: 1.5rem;
+  color: $colorTextLightGray;
   border: $grayBorder;
-  background-image: $buttonBackground; //todo may de need shadow
   @include border-radius(2px);
-}
-
-.to-cart{
-  width: 8rem;
 }
 
 .search{
   width: 6rem;
+  background-image: $buttonBackground;
 }
 
 .purchase{
   width: 12rem;
+  background-image: $buttonBackground;
 }
+
+.burger{
+  border: $grayBorder;
+  @include border-radius(3px);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cart{
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+}
+
+
+
+@-webkit-keyframes flying {
+  from{top: -25px;  left: 30px;}
+  to{top: -175px;  left: 41px; opacity: 0.1;}
+}
+@-o-keyframes flying {
+  from{top: -25px;  left: 30px;}
+  to{top: -175px;  left: 41px; opacity: 0.1;}
+}
+@-moz-keyframes flying {
+  from{top: -25px;  left: 30px;}
+  to{top: -175px;  left: 41px; opacity: 0.1;}
+}
+
+@keyframes flying {
+  from{top: -25px;  left: 30px;}
+  to{top: -175px;  left: 41px; opacity: 0.1;}
+}
+
+
+.to-cart{
+  width: 8rem;
+  text-align: right;
+  background: url("../images/nav-icons-vertical.png") no-repeat -24px -20px, $buttonBackground;
+  padding: 2px 5px 3px 8px;
+  @include transition(background .35s ease);
+
+  &:hover{
+    background: url("../images/nav-icons-vertical.png") no-repeat -44px -20px, $buttonBackground;
+    box-shadow: 0px 0px 1px 1px $darkOrange;
+  }
+}
+
+.clicked{
+  position: relative;
+  &::before{
+    content: '+1';
+    display: block;
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: 4px 2px;
+    box-sizing: border-box;
+    color: $colorTextWhite;
+    @include border-radius(50%);
+    background-color: $lightOrange;
+    position: absolute;
+    top: -24px;
+    left: 30px;
+    -webkit-animation: flying 1.55s forwards ease-in;
+    -moz-animation: flying 1.55s forwards ease-in;
+    animation: flying 1.55s forwards ease-in;
+  }
+}
+

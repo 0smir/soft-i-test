@@ -1,4 +1,37 @@
 .container{
+  min-height: 2rem;
   max-width: 100rem;
+  margin: 0 auto;
   padding: 0 1rem;
 }
+
+.main{
+  max-width: 77.6rem;
+  min-height: 10rem;
+  @include breakpoint(medium) {
+    max-width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+.slideshow{
+  box-shadow: 0px 2px 28px 2px $blackSadow,
+              inset 0px 170px 190px 0px $blackSadow;
+}
+
+.container > .h4:first-of-type{
+  background: url('../images/nav-icons-vertical.png') no-repeat -25px -408px;
+}
+
+.aside{
+  width: 18.8rem;
+  min-height: 7rem;
+  outline: $grayBorder;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+article{
+  margin: 1.4rem 0.5rem 0 1.3rem;
+}
+
